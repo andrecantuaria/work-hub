@@ -170,22 +170,8 @@ a {
     background-color: var(--app-light-gray);
 }
 
-.btn-gray a {
-    margin-right: 10px;
-    padding: 10px 10px 10px 10px;
-    align-items: center;
-    background-color: var(--app-medium-gray);
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--app-white);
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.btn-gray a:hover {
-    background-color: var(--app-dark-gray);
+.centered-btn {
+    text-align: center;
 }
 
 /*--------------HEADER----------------------*/
@@ -337,6 +323,40 @@ hr {
     margin: 35px 0 20px 0;
 }
 
+/*-------------DIALOG JOIN IN---------------*/
+
+dialog {
+    margin: auto;
+    width: 350px;
+    padding: 19px 25px 24px 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.2);
+    animation: anim 0.2s linear;
+    z-index: 1;
+}
+
+@keyframes anim {
+    from {
+        opacity: 0;
+        translate: 0 -6px;
+    } to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(5px);
+}
+
+dialog h2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    font-size: 30px;
+    color: var(--app-dark-gray);
+    text-align: center; 
+}
 
 /*-------------HERO SECTION---------------*/
 .hero {
