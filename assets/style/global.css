@@ -74,6 +74,15 @@ h2 {
     text-align: center;
 }
 
+.logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--app-dark-gray);
+    letter-spacing: 0.4px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
 h3 {
     font-size: 22px;
     font-weight: 6  00;
