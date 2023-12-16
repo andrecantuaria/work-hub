@@ -613,7 +613,7 @@ dialog h2 {
 
 .user-info {
     display: flex;
-    flex-direction: column; /* Agora é uma coluna, onde os elementos ficarão um abaixo do outro */
+    flex-direction: column; 
 }
 
 .user-name {
@@ -631,7 +631,7 @@ dialog h2 {
     color: var(--app-turquoise);
     font-size: 18px;
     margin-top: 10px;
-    margin-left: auto; /* Move o ícone para a direita */
+    margin-left: auto; 
 }
 
 

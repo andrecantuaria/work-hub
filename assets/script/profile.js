@@ -78,23 +78,23 @@ function setUsers(userList) {
         const userContainer = document.createElement('div');
         userContainer.className = 'user-container';
 
-        // Create an image element for the user's picture
+        // Create an image for the user
         const userImage = document.createElement('img');
         userImage.className = 'user-image';
         userImage.src = user.picture.medium;
         userContainer.appendChild(userImage);
 
-        // Create a div for user information
+        // user information
         const userInfo = document.createElement('div');
         userInfo.className = 'user-info';
 
-        // Create a paragraph for the user's name
+        // user's name
         const userName = document.createElement('p');
         userName.className = 'user-name';
         userName.innerText = `${user.name.first} ${user.name.last}`;
         userInfo.appendChild(userName);
 
-        // Create a paragraph for the user's city
+        // user's city
         const userCity = document.createElement('p');
         userCity.className = 'user-city';
         userCity.textContent = user.location.city;
@@ -103,7 +103,7 @@ function setUsers(userList) {
         // Append user information to the user container
         userContainer.appendChild(userInfo);
 
-        // Create an icon for adding the user
+        // Create an icon 
         const addUserIcon = document.createElement('icon');
         addUserIcon.classList.add('fas', 'fa-user-plus');
         userContainer.appendChild(addUserIcon);
