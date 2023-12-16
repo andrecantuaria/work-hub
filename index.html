@@ -21,16 +21,7 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,500;1,6..12,500&family=Playball&family=Roboto+Mono:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
        <!-- Scripts-->
-       <script src="./assets/script/index.js" defer></script>
-       <!--Maps links-->
-       <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
-       <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' />
-       <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' />
-       <script
-           src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
-       <link rel='stylesheet'
-           href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css'
-           type='text/css' />
+       <script src="./assets/script/index.js" type="module"></script>
    </head>
     <body> 
         <!-- Header-->
@@ -41,10 +32,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#about"><i class="fa-regular fa-newspaper"></i> Articles</a></li>
-                        <li><a href="#featured"><i class="fa-solid fa-users"></i> People</a></li>
-                        <li><a href="#contact"><i class="fa-solid fa-briefcase"></i> Jobs</a></li>
-                        <li><a href="#contact"><i class="fa-solid fa-mobile-screen"></i> Get the app</a></li>
+                        <li><a href="#"><i class="fa-regular fa-newspaper"></i> Articles</a></li>
+                        <li><a href="#"><i class="fa-solid fa-users"></i> People</a></li>
+                        <li><a href="#"><i class="fa-solid fa-briefcase"></i> Jobs</a></li>
+                        <li><a href="#"><i class="fa-solid fa-mobile-screen"></i> Get the app</a></li>
                     </ul>
                 </nav>
             </div>
@@ -65,25 +56,24 @@
                             </p>
 
                             <div class="login-container">
-                                <form>
-                                    <label for="username">Username:</label>
-                                    <input type="text" id="username" name="username" required>
-                        
-                                    <label for="password">Password:</label>
-                                    <input type="password" id="password" name="password" required>
+                               
 
+                                <form id="loginForm">
+                                    <label for="loginUsername">Username:</label>
+                                    <input type="text" class="login-username" name="loginUsername" required>
+                                    
+                                    <label for="loginPassword">Password:</label>
+                                    <input type="password" class="login-password" name="loginPassword" required>
+                            
                                     <div class="btn-group">
-                                        <div class="btn btn-blue item-inline">
+                                        <div class="btn btn-blue item-inline sign-in-button">
                                             <a href="#">Sign in</a>
                                         </div>
-                            
                                         <div class="btn btn-transparent btn-join-now item-inline">
                                             <a href="#">New to WorkHub? Join now</a>
                                         </div>
                                     </div>
-                                    <hr>
-                                    <p class="small-p">By clicking Join now, you agree to WorkHub’s User Agreement, Privacy Policy, and Cookie Policy.</p>
-
+                                    <div class="login-output-message">&nbsp;&nbsp;</div>
                                 </form>
                                 
                             </div>
@@ -115,6 +105,7 @@
                         <a href="#">Join now</a>
                     </div>
                 </div>
+                <div class="output-message"><p></p></div>
                 <hr>
                 <p class="small-p">By clicking Join now, you agree to WorkHub’s User Agreement, Privacy Policy, and Cookie Policy.</p>
             </form>
